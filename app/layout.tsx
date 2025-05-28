@@ -4,6 +4,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider";
 import type { Metadata } from "next";
 import { Analytics } from "@vercel/analytics/next";
+import { Toaster } from "@/components/ui/toaster";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -34,6 +35,7 @@ export default function RootLayout({
           {children}
         </ThemeProvider>
         <Analytics />
+        <Toaster />
       </body>
     </html>
   );

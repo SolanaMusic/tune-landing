@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import Image from "next/image";
 import { ArrowRight, Music } from "lucide-react";
@@ -21,12 +22,12 @@ export function HeroSection() {
               get paid fairly, and everyone owns a piece of the ecosystem.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button
-                size="lg"
-                className="bg-gradient-to-r from-purple-600 to-green-400 hover:from-purple-700 hover:to-green-500"
+              <Link
+                href="#early-access"
+                className="inline-flex items-center px-10 py-3 text-sm text-white bg-gradient-to-r from-purple-600 to-green-400 hover:from-purple-700 hover:to-green-500 rounded-lg"
               >
                 Get Early Access <ArrowRight className="ml-2 h-4 w-4" />
-              </Button>
+              </Link>
               <Button size="lg" variant="outline">
                 Learn More
               </Button>
